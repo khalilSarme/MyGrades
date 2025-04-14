@@ -1,5 +1,5 @@
 <template>
-  <my-container class="container-fluid bg-dark">
+  <my-container class="container-fluid bg-dark py-3">
     <my-container class="container d-flex align-items-center flex-wrap">
       <h6 class="mx-auto text-white">All rights recerved {{ getDate }} | <b class="text-success">Vuetivo</b></h6>
     </my-container>

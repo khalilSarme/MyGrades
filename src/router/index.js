@@ -2,11 +2,12 @@ import {
   createRouter,
   createWebHistory
 } from 'vue-router'
+
 import StartView from '../views/StartView.vue'
 
 const routes = [{
   path: '/',
-  name: 'start',
+  name: 'myStart',
   component: StartView,
   meta: {
     title: "Get Started",
@@ -16,17 +17,17 @@ const routes = [{
 },
   {
     path: '/configure_data',
-    name: 'confg',
+    name: 'myConfig',
     component: () => import('../views/FormView.vue'),
     meta: {
       title: 'Grade Configuration',
-      description: "Don't forget any field with (no value). Please, fill out all existing fields.",
+      description: "Don't forget any field with (no value). Please, fill out all existing fields. Final (Practical + Theoretical) grade must be between 0 and 100.",
       text: "New Grade"
     }
   },
   {
-    path: '/My_Grades',
-    name: 'grades',
+    path: '/my_grades',
+    name: 'myGrades',
     component: () => import("../views/GradesView.vue"),
     meta: {
       title: "Grades Preview",
@@ -37,7 +38,7 @@ const routes = [{
 ];
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory()/*(import.meta.env.BASE_URL)*/,
   routes,
 })
 

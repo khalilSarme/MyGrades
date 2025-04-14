@@ -2,8 +2,8 @@
   <my-header>
     {{ myRoute.meta.description }}
   </my-header>
-  <my-container class="container p-3">
-    <router-link :to="{name: 'confg'}" class="px-2 py-1 text-white bg-success">
+  <my-container class="container py-5" >
+    <router-link :to="{name: 'myConfig'}" class="btn btn-success px-3 py-2">
       Get Started
     </router-link>
   </my-container>
@@ -13,6 +13,7 @@
   import {
     useRoute,
     RouterLink
-  } from 'vue-router';
+  } from 'vue-router'
+  
   const myRoute = useRoute();
 </script>
