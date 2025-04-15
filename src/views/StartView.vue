@@ -2,8 +2,8 @@
   <my-header>
     {{ myRoute.meta.description }}
   </my-header>
-  <my-container class="container py-5">
-    <router-link :to="{name: 'myConfig'}" class="btn btn-success px-3 py-2">
+  <my-container class="container py-3">
+    <router-link :to="{name: 'myConfig'}" class="btn btn-success px-3 py-2 w-50">
       Get Started
     </router-link>
   </my-container>

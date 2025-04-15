@@ -25,9 +25,3 @@
   </div>
   <my-footer></my-footer>
 </template>
-
-<style scoped>
-  #pp {
-    position: relative;
-  }
-</style>

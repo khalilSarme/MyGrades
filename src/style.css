@@ -7,6 +7,9 @@ a {
   text-decoration: none;
   color: var(--bs-success);
 }
+#app {
+  position: relative;
+}
 .navbar-brand {
   color: var(--bs-success) !important;
   font-weight: 600;
@@ -55,7 +58,7 @@ a {
   left: 0;
   width: 100%;
   min-height: 100%;
-  background-color: rgba(230, 230, 230, 0.3);
+  background-color: rgba(4, 4, 4, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
