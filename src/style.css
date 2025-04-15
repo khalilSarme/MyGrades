@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: var(--bs-success);
+}
+.navbar-brand {
+  color: var(--bs-success) !important;
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+.links .router-link-exact-active {
+  background-color: var(--bs-success);
+}
+.my_grades {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.my_grades .card {
+  flex: 0 0 100%;
+}
+@media (min-width: 576px) {
+  .my_grades .card {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+}
+@media (min-width: 992px) {
+  .my_grades .card {
+    flex: 0 0 calc(33.333333% - 0.75rem);
+  }
+}
+@media (min-width: 1200px) {
+  .my_grades .card {
+    flex: 0 0 auto !important;
+  }
+}
+.my_grades .card-body h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.my_grades .card-body h4 span {
+  font-weight: normal;
+}
+.upToDate {
+  position: fixed;
+  z-index: 2000 !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(230, 230, 230, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s ease-in-out;
+}
